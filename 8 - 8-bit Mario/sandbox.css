@@ -12,6 +12,21 @@
     height: 16em;
 }
 
+#wahoo {
+    outline: none;
+}
+
+#wahoo:active + .mario-block {
+    animation: wahooMario 0.8s ease-in-out 1;
+}
+
+@keyframes wahooMario {
+    0% { left: 0; bottom: 0; transform: rotate(0); }
+    30% { left: 200px; bottom: 200px; transform: rotate(-25deg); }
+    80% { left: 400px; bottom: 0; transform: rotate(0); }
+    100% { left: 0; bottom: 0; }
+}
+
 .mario {
     display: block;
     width: 1em;
@@ -295,7 +310,3 @@
                 14em 15em #e7eef1,
                 15em 15em #e7eef1;
 }
-
-
-
-
