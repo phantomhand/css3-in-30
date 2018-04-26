@@ -21,6 +21,7 @@
     .tooltip:hover::before,
     .tooltip:hover::after {
         display: inline-block;
+        animation: fadeIn 0.3s ease-out;
     }
 
     .tooltip::before {
@@ -107,4 +108,24 @@
     border-left-color: rgba(0,0,0,0.8);
     border-right-width: 0;
     transform: translateY(-50%);
+}
+
+/* Fade In on Hover */
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    25% {
+        opacity: 0.25;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    75% {
+        opacity: 0.75;
+    }
+    100% {
+        opacity: 1;
+    }
 }
