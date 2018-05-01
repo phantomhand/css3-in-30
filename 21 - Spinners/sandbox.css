@@ -91,22 +91,6 @@
     }
 }
 
-@keyframes orbit-3 {
-    0% {
-        transform: translateX(120%) rotate(180deg);
-    }
-    30% {
-        transform: translateX(120%) rotate(0deg);  
-    }
-    70% {
-        transform: translateX(120%) rotate(0deg);
-    }
-    100% {
-        transform: translateX(120%) rotate(-180deg);
-    }
-}
-
-
 @keyframes rotator {
     0% {
         transform: rotate(-180deg);
